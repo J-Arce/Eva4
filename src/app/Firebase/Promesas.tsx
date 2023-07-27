@@ -11,7 +11,7 @@ export const registrarPedido = async(p:Pedido)=>{
 }
 
 export const obtenerPedidos = async()=>{
-    const querySnapshot = await getDocs(collection(db, "pedidos"));
+    const querySnapshot = await getDocs(collection(db, "pedido"));
     console.log("CHAOOO")
     console.log(querySnapshot)
     var pedidos:Pedido[] = []
@@ -34,7 +34,7 @@ export const obtenerPedidos = async()=>{
     return pedidos
 }
 export const obtenerPedido = async(idPedido:string)=>{
-    const docRef = doc(db, "pedidos", idPedido);
+    const docRef = doc(db, "pedido", idPedido);
     const docSnap = await getDoc(docRef);
 
     if (docSnap.exists()) {
@@ -56,11 +56,11 @@ export const obtenerPedido = async(idPedido:string)=>{
     }
 }
 export const actualizarPedido = async(idPedido:string,p:Pedido)=>{
-    const docRef = doc(db, "pedidos", idPedido);
+    const docRef = doc(db, "pedido", idPedido);
 
 // Set the "capital" field of the city 'DC'
     await updateDoc(docRef, {...p});
 }
 export const eliminarPedido = async(idPedido:string)=>{
-    await deleteDoc(doc(db, "pedidos", idPedido));
+    await deleteDoc(doc(db, "pedido", idPedido));
 }

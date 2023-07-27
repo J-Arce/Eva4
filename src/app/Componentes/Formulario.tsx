@@ -35,7 +35,7 @@ export const Formulario = () => {
     }
     registrarPedido(p)
     console.log(nombre);
-    alert("Bienvenido "+nombre);
+    alert("Registro exitoso señor/a: "+nombre);
   }
   const validarNombre = (valor:string)=>{
     setNombre(valor);
@@ -70,7 +70,7 @@ export const Formulario = () => {
           /><br/>
         
         <label>Indique el Tipo Pizza: </label><br/>
-        <input type="" // Dudas sobre como hacer esto
+        <input type="text" // Falta el input tipo select
 
           /*<label for="tipoPizza">Indique el Tipo de Pizza</label><br>
             <select id="tipoPizza">
@@ -99,7 +99,7 @@ export const Formulario = () => {
           /><br/>
 
         <label>Tipo de pago: </label><br/>
-        <input type=""  // Falta incorporar el input de tipo radio
+        <input type="text"  // Falta incorporar el input de tipo radio
           onChange={(e)=>setTipoPago(e.target.value)}
           value={tipoPago}
           /><br/>

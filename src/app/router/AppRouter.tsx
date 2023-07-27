@@ -8,6 +8,7 @@ import { Actualizar } from '../Componentes/Actualizar'
 import { Acerca } from '../Componentes/Acerca'
 import { Carta } from '../Componentes/Carta'
 import { Locales } from '../Componentes/Locales'
+import { Eliminar } from '../Componentes/Eliminar'
 export const AppRouter = () => {
   return (
     <Routes>
@@ -17,7 +18,8 @@ export const AppRouter = () => {
         <Route path='/formulario' element={<Formulario/>}/>
         <Route path='/locales' element={<Locales/>}/>
         <Route path='/mostrar' element={<Registros/>}/>
-        <Route path='/actualizar/:idPersona' element={<Actualizar/>}/>
+        <Route path='/actualizar/:idPedido' element={<Actualizar/>}/>
+        <Route path='/eliminar/:idPedido' element={<Eliminar/>}/>
     </Routes>
   )
 }
