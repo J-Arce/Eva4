@@ -1,0 +1,42 @@
+/* Diseño para el footer */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 30px;
+  }
+  
+.footer-contenido {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+  }
+
+/* Diseño para el header */
+.header {
+  background-color: #222;
+  color: #fff;
+  padding: 10px;
+  }
+
+.header-contenido {
+  text-align: right;
+  margin: 10px;
+  font-size: 18px;
+}
+
+.header-elemento{
+  color: #fff;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.header-nombreEmpresa{
+  display: inline-block;
+  text-align: left;
+  margin-right: 480px;
+}
+
+/* Diseño Formulario */
+.formulario-contenedor{
+  text-align: center;
+}
