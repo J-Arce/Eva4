@@ -1,6 +1,6 @@
 /* Diseño para el footer */
 .footer {
-  background-color: #222;
+  background-color: #4e073f;
   color: #fff;
   padding: 30px;
   }
@@ -13,8 +13,8 @@
 
 /* Diseño para el header */
 .header {
-  background-color: #222;
-  color: #fff;
+  background-color: #4e073f;
+  color: #ff0000;
   padding: 10px;
   }
 
@@ -25,7 +25,7 @@
 }
 
 .header-elemento{
-  color: #fff;
+  color: #55bb1a;
   display: inline-block;
   margin-right: 30px;
 }
@@ -39,4 +39,86 @@
 /* Diseño Formulario */
 .formulario-contenedor{
   text-align: center;
+}
+
+/* Diseño para el Main */
+.main-titulo{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.main-parrafo{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.main-imagen{
+  width: 800px;
+  object-position: 0px;
+}
+
+.main-subTitulo{
+  margin-left: 120px;
+  margin-bottom: 30px;
+  color: green;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Diseño Carta */
+.carta-pizza {
+  display: flex; /* Establece el contenedor como un flex container */
+  align-items: center; /* Centra verticalmente el contenido */
+}
+
+.carta-pizza img {
+  width: 600px; /* Puedes ajustar el tamaño de la imagen según tus necesidades */
+  height: auto; /* Para mantener la proporción de la imagen */
+  margin-right: 250px; /* Espacio entre la imagen y el texto */
+}
+
+.p{
+  font-size: 30px;
+}
+
+/* Diseño Seccion Acerca */
+.acerca-imagen {
+  display: flex;
+  align-items: center;
+}
+
+.acerca-imagen img {
+  width: 600px;
+  height: auto;
+  margin-right: 150px; 
+}
+
+.acerca-p{
+  font-size: 30px;
+}
+
+/* Diseño Seccion Locales */
+.locales-imagen {
+  display: block;
+  margin: auto;
+}
+
+.locales-titulo{
+  text-align: center;
+  font-size: 60px;
+}
+
+.locales-h1{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+.locales-p{
+  text-align: center;
+  font-size: 28px;
+  margin-top: 30px;
 }
